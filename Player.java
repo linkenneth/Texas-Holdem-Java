@@ -8,13 +8,17 @@ public class Player {
         _position = startPosition;
         _stackSize = startStackSize;
     }
-    public void bet(int amount) {
+    public void raise(int amount) {
+        if (amount < _stackSize) {
+            throw new IllegalArgumentException("not enough gold");
     }
     public void call(int amount) {
     }
     public void fold() {
     }
     public void reveal() {
+    }
+    
 
     public String name() {
         return _name;
@@ -25,3 +29,4 @@ public class Player {
     public int stackSize() {
         return _stackSize;
     }
+}
