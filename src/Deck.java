@@ -1,7 +1,7 @@
 /** A Deck class that is used to deal out cards to players and the flop. */
 public class Deck {
 
-    private Card[] cardsInDeck;
+    private Card[] cardsInDeck = new Card[52];
     private int deckIndex;
 
     /** A default, shuffled deck with 52 cards. */
